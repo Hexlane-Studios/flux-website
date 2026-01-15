@@ -1,3 +1,55 @@
 @import 'tailwindcss';
-@import 'fumadocs-ui/css/neutral.css';
+@import 'fumadocs-ui/css/solar.css';
 @import 'fumadocs-ui/css/preset.css';
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+/* Text balance for better typography */
+h1, h2, h3 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+/* Selection styling */
+::selection {
+  background-color: rgba(67, 182, 249, 0.3);
+  color: white;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* TOC active state */
+.fd-toc [data-active="true"] {
+  color: #f94943 !important;
+  border-color: #f94943 !important;
+}
+
+/* TOC links */
+.fd-toc a {
+  color: #71717a !important;
+}
+
+.fd-toc a:hover {
+  color: #fafafa !important;
+}
