@@ -5,8 +5,8 @@
     "index",
 
     "---[NotebookTabs]Changelogs---",
-    "./changelogs/fluxv3",
     "./changelogs/fluxv31",
+    "./changelogs/previous-versions",
 
     "---[BookDashed]Other---",
     "./other/faq"
