@@ -6,15 +6,19 @@
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
-    "types:check": "next typegen && tsc --noEmit"
+    "types:check": "next typegen && tsc --noEmit",
+    "build:worker": "opennextjs-cloudflare build",
+    "deploy": "opennextjs-cloudflare build && wrangler deploy",
+    "preview": "opennextjs-cloudflare build && wrangler dev"
   },
   "dependencies": {
+    "@opennextjs/cloudflare": "^1.20.2",
     "cnfast": "^0.1.0",
     "fumadocs-core": "16.14.4",
     "fumadocs-mdx": "15.2.3",
     "fumadocs-ui": "npm:@fumadocs/base-ui@16.14.4",
     "lucide-react": "^1.31.0",
-    "next": "16.3.0",
+    "next": "16.2.11",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
@@ -26,9 +30,15 @@
     "@types/react-dom": "^19.2.4",
     "postcss": "^8.5.26",
     "tailwindcss": "^4.3.3",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "wrangler": "^4.123.0"
   },
   "allowScripts": {
-    "esbuild@0.28.2": true
+    "esbuild@0.28.2": true,
+    "esbuild@0.25.4": true,
+    "esbuild@0.28.1": true,
+    "sharp@0.35.2": true,
+    "sharp@0.34.5": true,
+    "workerd@1.20260811.1": true
   }
 }
